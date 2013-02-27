@@ -14,6 +14,17 @@
 */
 package net.joaosilva.j2meds;
 
+/** Interface for classes meaning to compare two objects
+ * 
+ * @author João Silva
+ */
 public interface Comparator {
+	/** Compares first with second.
+	 * 
+	 * @param first First object to compare.
+	 * @param second Second object to compare.
+	 * @return A value less than 0 if first < second, 0 if first == second, and a value
+	 *		greater than 0 if first > second.  
+	 */
 	public int compare(Object first, Object second);
 }
