@@ -14,11 +14,8 @@
 */
 package net.joaosilva.j2meds;
 
-public class Comparators {
-	public static final StringComparator STRING = new StringComparator();
-	public static final IntegerComparator INTEGER = new IntegerComparator();
-	public static final ShortComparator SHORT = new ShortComparator();
-	public static final LongComparator LONG = new LongComparator();
-	public static final DoubleComparator DOUBLE = new DoubleComparator();
-	public static final FloatComparator FLOAT = new FloatComparator();
+public class ShortComparator implements Comparator {
+	public int compare(Object first, Object second) {
+		return ((Short)first).shortValue() - ((Short)second).shortValue();
+	}
 }
